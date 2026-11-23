@@ -5,14 +5,15 @@
 ## 更新内容
 
 - 在 `index.html` 修改简介和研究方向。替换首页照片时，更新 `assets/profile.jpg`，并在 `index.html` 中填写新照片的宽度、高度和替代文字。
-- 在 `index.html` 的 Selected Publications 区块或 `publications/index.html` 中用下方列表替换占位段落。每篇论文使用一个 `<li>`，并填入真实链接、作者、发表刊物或会议及年份。首页的论文标题使用 `<h3>`，独立论文页使用 `<h2>`。
+- 在 `index.html` 的 Selected Publications 区块或 `publications/index.html` 的列表中添加论文。每篇论文使用一个 `<li>`，并填写标题、作者、稿件状态或发表信息以及 PDF 链接。首页的论文标题使用 `<h3>`，独立论文页使用 `<h2>`。
 
 ```html
 <ul class="publication-list" role="list">
   <li>
-    <h2><a href="https://example.com/paper">Paper title</a></h2>
+    <h2>Paper title</h2>
     <p>Author names</p>
     <p class="publication-meta">Venue, year</p>
+    <a class="publication-link" href="https://example.com/paper.pdf">PDF</a>
   </li>
 </ul>
 ```

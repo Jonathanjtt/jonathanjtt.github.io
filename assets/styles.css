@@ -129,11 +129,6 @@ h2 {
   font-size: clamp(1.5rem, 4vw, 1.875rem);
 }
 
-.subtitle {
-  margin: 0.65rem 0 0;
-  color: var(--muted);
-}
-
 .intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(10rem, 27%);
@@ -165,8 +160,6 @@ h2 {
   border-top: 1px solid var(--border);
 }
 
-.empty-state { margin-top: 1rem; color: var(--muted); }
-
 .publication-list {
   margin: 1rem 0 0;
   padding: 0;
@@ -186,6 +179,17 @@ h2 {
 }
 
 .publication-list p { margin-bottom: 0.35rem; }
+
+.publication-link {
+  display: inline-block;
+  padding: 0.125rem 0.625rem;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.publication-link:hover { text-decoration: underline; }
 
 .site-footer {
   border-top: 1px solid var(--border);
