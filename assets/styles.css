@@ -70,7 +70,6 @@ a {
 
 .site-name {
   color: var(--text);
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -119,16 +118,15 @@ h1,
 h2 {
   margin: 0;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 h1 {
   font-size: clamp(2rem, 5vw, 2.5rem);
-  font-weight: 700;
 }
 
 h2 {
   font-size: clamp(1.5rem, 4vw, 1.875rem);
-  font-weight: 400;
 }
 
 .subtitle {
@@ -141,18 +139,24 @@ h2 {
   grid-template-columns: minmax(0, 1fr) minmax(10rem, 27%);
   align-items: start;
   column-gap: clamp(2rem, 6vw, 5rem);
+  row-gap: 1rem;
 }
 
 .intro-heading { grid-column: 1 / -1; }
-.bio { margin-top: 1.75rem; }
+.name-chinese { display: inline-block; }
+.profile { margin: 0; }
 
 .profile-photo {
   display: block;
-  margin-top: 1.75rem;
   width: 100%;
   height: auto;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
+}
+
+.profile-contact {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
 }
 
 .selected-publications {
@@ -179,7 +183,6 @@ h2 {
 .publication-list :is(h2, h3) {
   margin: 0 0 0.35rem;
   font: inherit;
-  font-weight: 600;
 }
 
 .publication-list p { margin-bottom: 0.35rem; }
@@ -199,5 +202,5 @@ h2 {
 @media (max-width: 37rem) {
   .container { width: calc(100% - 2rem); }
   .intro { grid-template-columns: 1fr; }
-  .profile-photo { max-width: 12rem; }
+  .profile { max-width: 12rem; }
 }
