@@ -175,7 +175,7 @@ h2 {
 
 .profile-photo { display: block; }
 
-.news {
+.selected-publications {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
@@ -183,21 +183,12 @@ h2 {
 
 .empty-state { margin-top: 1rem; color: var(--muted); }
 
-.news-list,
 .publication-list {
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
 }
 
-.news-list li {
-  display: grid;
-  grid-template-columns: minmax(6.5rem, auto) 1fr;
-  gap: 0.25rem 1.5rem;
-  padding-block: 0.6rem;
-}
-
-.news-list time,
 .publication-meta { color: var(--muted); }
 
 .publication-list li {
@@ -205,8 +196,8 @@ h2 {
   border-bottom: 1px solid var(--border);
 }
 
-.publication-list h2 {
-  margin-bottom: 0.35rem;
+.publication-list :is(h2, h3) {
+  margin: 0 0 0.35rem;
   font: inherit;
   font-weight: 600;
 }
@@ -229,8 +220,4 @@ h2 {
   .container { width: calc(100% - 2rem); }
   .intro { grid-template-columns: 1fr; }
   .profile-placeholder, .profile-photo { max-width: 12rem; }
-}
-
-@media (max-width: 24rem) {
-  .news-list li { grid-template-columns: 1fr; }
 }

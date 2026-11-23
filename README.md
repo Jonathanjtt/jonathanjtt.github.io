@@ -1,19 +1,11 @@
 # Junting Wu · Academic homepage
 
-参考 [Julie Zhu 的主页](https://qianyu-zhu.github.io/)和 [al-folio](https://github.com/alshedivat/al-folio) 的静态个人网站。网站包含 About、News 和 Publications，支持手机浏览及深浅色切换。 [访问网站](https://jonathanjtt.github.io/)
+参考 [Julie Zhu 的主页](https://qianyu-zhu.github.io/)和 [al-folio](https://github.com/alshedivat/al-folio) 的静态个人网站。首页包含个人简介和 Selected Publications，另有独立的 Publications 页面。网站支持手机浏览及深浅色切换。 [访问网站](https://jonathanjtt.github.io/)
 
 ## 更新内容
 
 - 在 `index.html` 修改简介和研究方向。把照片放到 `assets/profile.jpg`，再把 `profile-placeholder` 整块替换成 `<img class="profile-photo" src="assets/profile.jpg" alt="你的姓名">`。
-- 在 `index.html` 的 News 区块用以下列表替换占位段落。每条近况使用一个 `<li>`。
-
-```html
-<ul class="news-list" role="list">
-  <li><time datetime="2026-11-23">Nov 23, 2026</time><span>在这里写近况。</span></li>
-</ul>
-```
-
-- 在 `publications/index.html` 用以下列表替换占位段落。每篇论文使用一个 `<li>`，将示例链接改成论文的真实地址。
+- 在 `index.html` 的 Selected Publications 区块或 `publications/index.html` 中用下方列表替换占位段落。每篇论文使用一个 `<li>`，并填入真实链接、作者、发表刊物或会议及年份。首页的论文标题使用 `<h3>`，独立论文页使用 `<h2>`。
 
 ```html
 <ul class="publication-list" role="list">
