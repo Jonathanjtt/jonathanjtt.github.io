@@ -4,7 +4,7 @@
 
 ## 更新内容
 
-- 在 `index.html` 修改简介和研究方向。把照片放到 `assets/profile.jpg`，再把 `profile-placeholder` 整块替换成 `<img class="profile-photo" src="assets/profile.jpg" alt="你的姓名">`。
+- 在 `index.html` 修改简介和研究方向。替换首页照片时，更新 `assets/profile.jpg`，并在 `index.html` 中填写新照片的宽度、高度和替代文字。
 - 在 `index.html` 的 Selected Publications 区块或 `publications/index.html` 中用下方列表替换占位段落。每篇论文使用一个 `<li>`，并填入真实链接、作者、发表刊物或会议及年份。首页的论文标题使用 `<h3>`，独立论文页使用 `<h2>`。
 
 ```html

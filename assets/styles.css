@@ -5,8 +5,6 @@
   --muted: light-dark(#62606d, #b9b3c3);
   --border: light-dark(#e7e4ec, #3b3744);
   --accent: light-dark(#7c3083, #e6a6ef);
-  --portrait: light-dark(#f3eef5, #292333);
-  --portrait-line: light-dark(#dbcfdf, #50415c);
   font-family: Georgia, "Times New Roman", serif;
   background: var(--background);
   color: var(--text);
@@ -148,33 +146,14 @@ h2 {
 .intro-heading { grid-column: 1 / -1; }
 .bio { margin-top: 1.75rem; }
 
-.profile-placeholder,
 .profile-photo {
+  display: block;
   margin-top: 1.75rem;
   width: 100%;
+  height: auto;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
 }
-
-.profile-placeholder {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 4 / 5;
-  background: var(--portrait);
-}
-
-.profile-placeholder span {
-  display: grid;
-  place-items: center;
-  width: 58%;
-  aspect-ratio: 1;
-  border: 1px solid var(--portrait-line);
-  border-radius: 50%;
-  color: var(--accent);
-  font: 2.25rem/1 Georgia, serif;
-}
-
-.profile-photo { display: block; }
 
 .selected-publications {
   margin-top: 2.5rem;
@@ -220,5 +199,5 @@ h2 {
 @media (max-width: 37rem) {
   .container { width: calc(100% - 2rem); }
   .intro { grid-template-columns: 1fr; }
-  .profile-placeholder, .profile-photo { max-width: 12rem; }
+  .profile-photo { max-width: 12rem; }
 }
