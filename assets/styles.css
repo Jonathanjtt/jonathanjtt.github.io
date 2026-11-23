@@ -139,6 +139,18 @@ h2 {
 
 .intro-heading { grid-column: 1 / -1; }
 .name-chinese { display: inline-block; }
+
+.bio code {
+  padding: 0.125em 0.25em;
+  border-radius: 0.1875rem;
+  background: light-dark(#f6edf6, #322638);
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.875em;
+}
+
+.application-note { color: light-dark(#a51e2d, #ff9aa3); }
+
 .profile { margin: 0; }
 
 .profile-photo {
